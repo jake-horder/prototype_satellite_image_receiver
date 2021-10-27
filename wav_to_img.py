@@ -53,7 +53,8 @@ IMG = np.fliplr(np.flipud(IMG))
 
 #%% OP contrast enhance
 
-IMG_OP = IMG[:,200:2300] # Select optical channel
+# Select optical channel
+IMG_OP = IMG[:,200:2300] # These values selected manually
 
 # Reshape into 1D vector for histogram plotting
 rz, cz = IMG_OP.shape
@@ -91,7 +92,8 @@ plt.savefig('15_10_21_OP.png')
 
 #%% IR contrast enhance
 
-IMG_IR = IMG[:,2700:4800] # Select IR channel
+# Select IR channel
+IMG_IR = IMG[:,2700:4800] # These values selected manually
 
 # Reshape into 1D vector for histogram plotting
 rz, cz = IMG_IR.shape
