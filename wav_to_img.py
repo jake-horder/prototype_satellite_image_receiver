@@ -8,7 +8,8 @@ This script takes as input a single-channel (mono, not stereo) audio file
 in the WAV format. It then performs amplitude demodulation to obtain a
 time series of the amplitude of the audio file. This amplitude time series
 is then reshaped into a 2D image, which is sliced into the Optical (OP) 
-Channel and Infra Red (IR) Channel. Contrast enhancement is then performed on each slice, and images are plotted and saved in PNG format.
+Channel and Infra Red (IR) Channel. Contrast enhancement is then performed
+on each slice, and images are plotted and saved in PNG format.
 
 NOTE:
 Variables that have been selected via visual inspection and trial and error
