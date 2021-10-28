@@ -49,6 +49,12 @@ IMG = np.reshape(data_am[:int(len(data_am)/w)*w], (h,w))
 # Rotate image 180 deg if satellite path was south to north
 IMG = np.fliplr(np.flipud(IMG))
 
+# Plot full twin-channel image
+plt.figure(figsize=(20,IMG.shape[0]/100*1.5))
+plt.imshow(IMG, extent=[0,w,0,h], aspect='auto', cmap="bone")
+plt.axis('off')
+plt.savefig('15_10_21_full.png')
+
 
 
 #%% OP contrast enhance
